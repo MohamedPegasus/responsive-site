@@ -244,6 +244,14 @@
     font-size: 30px;
     margin: 0;
 }
+@media screen and (max-width:750px) {
+    .landing .intro h1{
+        font-size: 30px;
+    }
+    .landing .intro p{
+        font-size: 15px;
+    }
+}
 /*end landing*/
 
 /*start features*/
@@ -284,7 +292,7 @@
     height: 300px;
     border-radius: 5%;
 }
-.features .features-container .feat h2 {
+.features .features-container .feat h1 {
     align-items: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: var(--main-color);
@@ -307,6 +315,15 @@
     text-transform: capitalize;
     font-size: 20px;
     font-weight: bold;
+}
+@media screen and (max-width:750px) {
+    .features .features-container .feat h1 {
+        font-size: 30px;
+    }
+
+        .features .features-container .feat p {
+        font-size: 15px;
+    }
 }
 /*end features*/
 
@@ -375,11 +392,12 @@
 
 .main-card .cards .card {
     position: relative;
-    width: 400px;
-    padding: 0 10px;
+    width: 350px;
+    padding: 0px 10px;
     border-radius: 25px;
     margin-left: 10px;
     height: 500px;
+    align-items: center;
     transition: all 0.5 ease-in-out;
     -webkit-box-reflect: below 1px linear-gradient(transparent 75%,
             #0009);
@@ -476,16 +494,17 @@ input[type="radio"] {
     border-radius: 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 750px) {
     .main-card .cards .card {
-        width: calc(100% / 2 - 10px);
-        margin: 20px 0 10px 0;
+        width: 80%;
+        margin: 35px 15px;
+        align-items: center;
     }
-}
-
-@media (max-width: 600px) {
-    .main-card .cards .card {
-        width: 100%;
+    .slide-container h1{
+        font-size: 25px;
+    }
+    .slide-container p{
+        font-size: 15px;
     }
 }
 
@@ -545,7 +564,11 @@ input[type="radio"] {
     display: none;
     background-image: linear-gradient(180deg, #f2f2f403, #0e0f0f80);
 }
-
+@media (max-width: 750px){
+    .expo{
+        font-size: 13px;
+    }
+}
 /* end para*/
 /*start customer*/
 .customers{
@@ -678,8 +701,8 @@ input[type="radio"] {
 .contact .kform{
     align-items: center;
     text-transform: capitalize;
-        margin-top: 50px;
-        margin-bottom: 50px;
+        margin: 50px 15px;
+        
         width: fit-content;
         height: fit-content;
         color: rgba(6, 6, 36, 0.466);
@@ -794,10 +817,10 @@ padding: 0 15px;
 }
 .services-container-serv h1{
     margin: 25px 0;
-    font-size: 50px;
+    font-size: 40px;
     text-transform: capitalize;
     font-weight: 900;
-    line-height: 1.5rem;
+    line-height: 1rem;
     color: var(--main-color);
     text-shadow: #033f4b 10px 10px 15px;
 }
@@ -835,5 +858,16 @@ padding: 0 15px;
 .services-container-serv-ex .explain p{
     width: 100%;
     height: 200px;
+}
+@media (max-width: 750px){
+    .services-container-serv h1{
+        font-size: 26px;
+    }
+    .services-container-serv-ex .explain h1{
+        font-size: 25px;
+    }
+        .services-container p{
+            font-size: 15px;
+        }
 }
 /*end services*/
